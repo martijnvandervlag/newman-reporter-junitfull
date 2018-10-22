@@ -1,0 +1,37 @@
+{
+  "name": "newman-reporter-junitfull",
+  "version": "1.0.0",
+  "description": "A Newman JUnit Reporter providing full reports (without aggregation of results)",
+  "main": "index.js",
+  "bundleDependencies": false,
+  "dependencies": {
+    "lodash": "4.17.10",
+	"xmlbuilder": "10.0.0"
+  },
+  "deprecated": false,
+  "homepage": "https://github.com/martijnvandervlag/newman-reporter-junitfull",
+  "keywords": [
+    "newman",
+    "reporter",
+    "junit"
+  ],
+  "author": {
+    "name": "Martijn van der Vlag",
+    "email": "martijnvandervlag@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=6"
+  },
+  "peerDependencies": {
+    "newman": ">=4"
+  },
+  "preferGlobal": true,
+  "bugs": {
+    "url": "https://github.com/martijnvandervlag/newman-reporter-junitfull/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/martijnvandervlag/newman-reporter-junitfull.git"
+  }
+}

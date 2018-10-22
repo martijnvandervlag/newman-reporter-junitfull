@@ -1,0 +1,5 @@
+# Newman JUnit Full Reporter Changelog
+1.0.0:
+  date: 2018-10-22
+  initial release:
+    - 'Initial newman-reporter-junitfull release based on JUnit report in newman'

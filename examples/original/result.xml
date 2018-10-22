@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Postman Echo" tests="74" time="12.655">
+  <testsuite name="Request Methods / GET Request" id="5a909f6d-31ca-47c7-9cad-4f7daeab33fc" tests="2" failures="0" errors="0" time="0.248">
+    <testcase name="response is ok" time="0.117"/>
+    <testcase name="response body has json with request queries" time="0.117"/>
+  </testsuite>
+  <testsuite name="Request Methods / POST Raw Text" id="8891e043-8187-48cb-9373-34eab1f73185" tests="2" failures="0" errors="0" time="0.113">
+    <testcase name="response is ok" time="0.129"/>
+    <testcase name="response body has json with request body" time="0.129"/>
+  </testsuite>
+  <testsuite name="Request Methods / POST Form Data" id="a8dd2f33-026f-4af0-88ac-2d68ab99d85a" tests="2" failures="0" errors="0" time="0.117">
+    <testcase name="response is ok" time="0.094"/>
+    <testcase name="response body has json with form data" time="0.094"/>
+  </testsuite>
+  <testsuite name="Request Methods / PUT Request" id="16ffd620-0923-4edb-8805-016c2dfacc76" tests="2" failures="0" errors="0" time="0.115">
+    <testcase name="response is ok" time="0.136"/>
+    <testcase name="response body has json with form data" time="0.136"/>
+  </testsuite>
+  <testsuite name="Request Methods / PATCH Request" id="64561a1e-961a-4282-b2f4-8d77a8b1513d" tests="2" failures="0" errors="0" time="0.118">
+    <testcase name="response is ok" time="0.135"/>
+    <testcase name="response body has json with form data" time="0.135"/>
+  </testsuite>
+  <testsuite name="Request Methods / DELETE Request" id="d6c9e095-f664-457e-8726-7b3cd1a68ebe" tests="2" failures="0" errors="0" time="0.115">
+    <testcase name="response is ok" time="0.134"/>
+    <testcase name="response body has json with form data" time="0.134"/>
+  </testsuite>
+  <testsuite name="Headers / Request Headers" id="d98804a0-efcf-4156-a579-e0145e2e69f7" tests="2" failures="0" errors="0" time="0.093">
+    <testcase name="response is ok" time="0.092"/>
+    <testcase name="sample request header should be returned in response body" time="0.092"/>
+  </testsuite>
+  <testsuite name="Headers / Response Headers" id="2c78fbe2-e5b0-45bf-8198-c4e07b79dd7d" tests="3" failures="0" errors="0" time="0.114">
+    <testcase name="response is ok" time="0.134"/>
+    <testcase name="response has the headers sent as part of request query" time="0.134"/>
+    <testcase name="sample request param should be returned in response body" time="0.134"/>
+  </testsuite>
+  <testsuite name="Authentication Methods / Basic Auth" id="a3ea95b9-7d1a-4dc2-b3e7-27a1bc7a5c73" tests="2" failures="0" errors="0" time="0.116">
+    <testcase name="response is ok" time="0.094"/>
+    <testcase name="response body has json saying 'authenticated'" time="0.094"/>
+  </testsuite>
+  <testsuite name="Authentication Methods / DigestAuth Success" id="9d43dd11-9d85-4cea-857f-7fac27b39653" tests="2" failures="0" errors="0" time="0.137">
+    <testcase name="response code is 200" time="0.134"/>
+    <testcase name="body contains authenticated" time="0.134"/>
+  </testsuite>
+  <testsuite name="Authentication Methods / Hawk Auth" id="83fb2e36-329c-4ba1-854b-37646604fdbf" tests="2" failures="2" errors="0" time="0.116">
+    <testcase name="response is ok" time="0.093"/>
+    <testcase name="response body has json saying passed 'status'" time="0.093" classname="Authentication Methods / Hawk Auth">
+      <failure type="AssertionFailure">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: b3e4e2e1-3ede-4589-abb1-d4f98ce0d5a9.]]>
+        <![CDATA[Collection name: Postman Echo.]]>
+        <![CDATA[Request name: Authentication Methods / Hawk Auth.]]>
+        <![CDATA[Test description: response body has json saying passed 'status'.]]>
+        <![CDATA[Error message: expected { Object (message) } in response to contain property 'status'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected { Object (message) } in response to contain property 'status'
+   at Object.eval sandbox-script.js:2:11).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Authentication Methods / OAuth1.0 (verify signature)" id="03c3619d-4883-4125-b607-3f6659d22f76" tests="2" failures="0" errors="0" time="0.115">
+    <testcase name="response is ok" time="0.135"/>
+    <testcase name="response body has json saying passed 'status'" time="0.135"/>
+  </testsuite>
+  <testsuite name="Cookie Manipulation / Set Cookies" id="7019031c-3727-414a-815f-9f0c86ff2c63" tests="4" failures="0" errors="0" time="0.192">
+    <testcase name="response should be 200 or 302" time="0.184"/>
+    <testcase name="the &quot;foo1&quot; cookie has correct value" time="0.184"/>
+    <testcase name="the &quot;foo2&quot; cookie has correct value" time="0.184"/>
+    <testcase name="response body should be valid" time="0.184"/>
+  </testsuite>
+  <testsuite name="Cookie Manipulation / Get Cookies" id="3473183f-70d4-439b-988c-2b23df037da1" tests="4" failures="0" errors="0" time="0.135">
+    <testcase name="response is ok" time="0.135"/>
+    <testcase name="the &quot;foo1&quot; cookie has correct value" time="0.135"/>
+    <testcase name="the &quot;foo2&quot; cookie has correct value" time="0.135"/>
+    <testcase name="response body should be valid" time="0.135"/>
+  </testsuite>
+  <testsuite name="Cookie Manipulation / Delete Cookies" id="4e278a5d-5acd-4717-aa1c-4b5ed065258a" tests="4" failures="0" errors="0" time="0.229">
+    <testcase name="response should be 200 or 302" time="0.227"/>
+    <testcase name="the &quot;foo1&quot; cookie should not be present" time="0.227"/>
+    <testcase name="the &quot;foo2&quot; cookie should not be present" time="0.227"/>
+    <testcase name="response body should be valid" time="0.227"/>
+  </testsuite>
+  <testsuite name="Utilities / Response Status Code" id="4bbbbcb4-6000-4dff-a028-ed74bf942f99" tests="3" failures="0" errors="0" time="0.115">
+    <testcase name="response is ok" time="0.137"/>
+    <testcase name="response has valid json body" time="0.137"/>
+    <testcase name="status in response body must match the one in request" time="0.137"/>
+  </testsuite>
+  <testsuite name="Utilities / Streamed Response" id="745f6829-ace1-4c04-998a-bec17a419d7c" tests="2" failures="2" errors="0" time="0.095">
+    <testcase name="response is ok" time="0.092"/>
+    <testcase name="response has chunked transfer encoding header" time="0.092" classname="Utilities / Streamed Response">
+      <failure type="AssertionFailure">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: b3e4e2e1-3ede-4589-abb1-d4f98ce0d5a9.]]>
+        <![CDATA[Collection name: Postman Echo.]]>
+        <![CDATA[Request name: Utilities / Streamed Response.]]>
+        <![CDATA[Test description: response has chunked transfer encoding header.]]>
+        <![CDATA[Error message: expected response to have header with key 'transfer-encoding'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'transfer-encoding'
+   at Object.eval sandbox-script.js:2:17).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Utilities / Delay Response" id="368b67d0-dd14-4748-9d23-b63b8757d181" tests="4" failures="0" errors="0" time="2.114">
+    <testcase name="response is ok" time="2.134"/>
+    <testcase name="response has valid json body" time="2.134"/>
+    <testcase name="request must have a valid delay" time="2.134"/>
+    <testcase name="response should take more time than the delay specified" time="2.134"/>
+  </testsuite>
+  <testsuite name="Utilities / Get UTF8 Encoded Response" id="b971cbec-2eae-471a-8c48-64d7e772c4cb" tests="3" failures="2" errors="0" time="0.097">
+    <testcase name="response is ok" time="0.098"/>
+    <testcase name="response has charset in content-type header" time="0.098"/>
+    <testcase name="response has chunked transfer encoding header" time="0.098" classname="Utilities / Get UTF8 Encoded Response">
+      <failure type="AssertionFailure">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: b3e4e2e1-3ede-4589-abb1-d4f98ce0d5a9.]]>
+        <![CDATA[Collection name: Postman Echo.]]>
+        <![CDATA[Request name: Utilities / Get UTF8 Encoded Response.]]>
+        <![CDATA[Test description: response has chunked transfer encoding header.]]>
+        <![CDATA[Error message: expected response to have header with key 'transfer-encoding'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'transfer-encoding'
+   at Object.eval sandbox-script.js:3:19).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Utilities / GZip Compressed Response" id="f5243b71-fb3a-452a-ac31-4c0d5f20379f" tests="4" failures="2" errors="0" time="0.095">
+    <testcase name="response is ok" time="0.094"/>
+    <testcase name="response has valid json body" time="0.094"/>
+    <testcase name="response headers should indicate valid content encoding" time="0.094" classname="Utilities / GZip Compressed Response">
+      <failure type="AssertionFailure">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: b3e4e2e1-3ede-4589-abb1-d4f98ce0d5a9.]]>
+        <![CDATA[Collection name: Postman Echo.]]>
+        <![CDATA[Request name: Utilities / GZip Compressed Response.]]>
+        <![CDATA[Test description: response headers should indicate valid content encoding.]]>
+        <![CDATA[Error message: expected 'content-type' response header to be 'application/json' but got 'application/json; charset=utf-8'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'content-type' response header to be 'application/json' but got 'application/json; charset=utf-8'
+   at Object.eval sandbox-script.js:3:20).]]>
+      </failure>
+    </testcase>
+    <testcase name="requesting http client should accept compressed response" time="0.094"/>
+  </testsuite>
+  <testsuite name="Utilities / Deflate Compressed Response" id="cc453b65-d8f3-4996-aa8b-c059eb74b57f" tests="4" failures="2" errors="0" time="0.096">
+    <testcase name="response is ok" time="0.094"/>
+    <testcase name="response has valid json body" time="0.094"/>
+    <testcase name="response headers should indicate valid content encoding" time="0.094" classname="Utilities / Deflate Compressed Response">
+      <failure type="AssertionFailure">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: b3e4e2e1-3ede-4589-abb1-d4f98ce0d5a9.]]>
+        <![CDATA[Collection name: Postman Echo.]]>
+        <![CDATA[Request name: Utilities / Deflate Compressed Response.]]>
+        <![CDATA[Test description: response headers should indicate valid content encoding.]]>
+        <![CDATA[Error message: expected 'content-type' response header to be 'application/json' but got 'application/json; charset=utf-8'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 'content-type' response header to be 'application/json' but got 'application/json; charset=utf-8'
+   at Object.eval sandbox-script.js:3:21).]]>
+      </failure>
+    </testcase>
+    <testcase name="requesting http client should accept compressed response" time="0.094"/>
+  </testsuite>
+  <testsuite name="Utilities / IP address in JSON format" id="c355f8ca-ec0a-40fa-93ca-dd4aa5269643" tests="3" failures="0" errors="0" time="0.135">
+    <testcase name="response is ok" time="0.135"/>
+    <testcase name="response has valid json body" time="0.135"/>
+    <testcase name="response must return a valid ip address" time="0.135"/>
+  </testsuite>
+  <testsuite name="Utilities / Date and Time / Current UTC time" id="672a43aa-5583-4ea4-a964-843716c9f748" tests="2" failures="0" errors="0" time="0.093">
+    <testcase name="response is ok" time="0.094"/>
+    <testcase name="response time matches server response 'date' header" time="0.094"/>
+  </testsuite>
+  <testsuite name="Utilities / Date and Time / Timestamp validity" id="32b8e5fe-f548-443f-886d-933ece3f90e7" tests="2" failures="0" errors="0" time="0.092">
+    <testcase name="response is ok" time="0.092"/>
+    <testcase name="response json should say whether request query time is valid" time="0.092"/>
+  </testsuite>
+  <testsuite name="Utilities / Date and Time / Format timestamp" id="959aba5a-ac04-434a-b678-c2cec5c4d80d" tests="2" failures="0" errors="0" time="0.093">
+    <testcase name="response is ok" time="0.094"/>
+    <testcase name="response json should say whether request query time is valid" time="0.094"/>
+  </testsuite>
+  <testsuite name="Utilities / Date and Time / Extract timestamp unit" id="591ffede-ebd8-449b-afca-002c9123daa3" tests="2" failures="0" errors="0" time="0.115">
+    <testcase name="response is ok" time="0.096"/>
+    <testcase name="response json should say whether request query unit is valid" time="0.096"/>
+  </testsuite>
+  <testsuite name="Utilities / Date and Time / Time addition" id="f56f9395-e087-4182-8254-45c32aa8b33d" tests="2" failures="0" errors="0" time="0.097">
+    <testcase name="response is ok" time="0.098"/>
+    <testcase name="response json should return the added years" time="0.098"/>
+  </testsuite>
+  <testsuite name="Utilities / Date and Time / Time subtraction" id="f97936f7-0772-4309-9132-c9de062d80b7" tests="2" failures="0" errors="0" time="0.094">
+    <testcase name="response is ok" time="0.095"/>
+    <testcase name="response json should return the subtracted years" time="0.095"/>
+  </testsuite>
+  <testsuite name="Utilities / Date and Time / Start of time" id="5ba3c06c-9e71-4a84-855e-4cca68950cc0" tests="2" failures="0" errors="0" time="0.094">
+    <testcase name="response is ok" time="0.093"/>
+    <testcase name="response json should return the beginning of month" time="0.093"/>
+  </testsuite>
+  <testsuite name="Utilities / Date and Time / Object representation" id="ce59ff6a-4198-42bb-b458-0903ae944550" tests="2" failures="0" errors="0" time="0.117">
+    <testcase name="response is ok" time="0.138"/>
+    <testcase name="response json should return the date components" time="0.138"/>
+  </testsuite>
+  <testsuite name="Utilities / Date and Time / Before comparisons" id="b3d3dad9-e593-410d-b5b4-7f582908084f" tests="2" failures="0" errors="0" time="0.093">
+    <testcase name="response is ok" time="0.094"/>
+    <testcase name="response json should say timestamp is before target" time="0.094"/>
+  </testsuite>
+  <testsuite name="Utilities / Date and Time / After comparisons" id="755c54e4-fe77-420d-8e78-707030bb5820" tests="2" failures="0" errors="0" time="0.118">
+    <testcase name="response is ok" time="0.099"/>
+    <testcase name="response json should say timestamp is not after target" time="0.099"/>
+  </testsuite>
+  <testsuite name="Utilities / Date and Time / Between timestamps" id="990222b9-e74a-45b6-a4f8-de8707ecb8cf" tests="2" failures="0" errors="0" time="0.113">
+    <testcase name="response is ok" time="0.093"/>
+    <testcase name="response json should say timestamp is not between start and end" time="0.093"/>
+  </testsuite>
+  <testsuite name="Utilities / Date and Time / Leap year check" id="61ac00f0-4423-45dc-9286-563c993a1dcf" tests="2" failures="0" errors="0" time="0.116">
+    <testcase name="response is ok" time="0.093"/>
+    <testcase name="response json should say timestamp is within leap year" time="0.093"/>
+  </testsuite>
+  <testsuite name="Utilities / Postman Collection / Transform collection from format v1 to v2" id="2e1f94b5-0799-41f5-9c7a-ec6115882a2f" tests="2" failures="4" errors="0" time="0.093">
+    <testcase name="response is ok" time="0.094" classname="Utilities / Postman Collection / Transform collection from format v1 to v2">
+      <failure type="AssertionFailure">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: b3e4e2e1-3ede-4589-abb1-d4f98ce0d5a9.]]>
+        <![CDATA[Collection name: Postman Echo.]]>
+        <![CDATA[Request name: Utilities / Postman Collection / Transform collection from format v1 to v2.]]>
+        <![CDATA[Test description: response is ok.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 404.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 404
+   at Object.eval sandbox-script.js:1:35).]]>
+      </failure>
+    </testcase>
+    <testcase name="response has almost valid items" time="0.094" classname="Utilities / Postman Collection / Transform collection from format v1 to v2">
+      <failure type="AssertionFailure">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: b3e4e2e1-3ede-4589-abb1-d4f98ce0d5a9.]]>
+        <![CDATA[Collection name: Postman Echo.]]>
+        <![CDATA[Request name: Utilities / Postman Collection / Transform collection from format v1 to v2.]]>
+        <![CDATA[Test description: response has almost valid items.]]>
+        <![CDATA[Error message: expected undefined in response to contain property 'info.schema'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined in response to contain property 'info.schema'
+   at Object.eval sandbox-script.js:2:35).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Utilities / Postman Collection / Transform collection from format v2 to v1" id="6960f18a-557a-43b5-95eb-680cac9d1ffc" tests="2" failures="4" errors="0" time="0.093">
+    <testcase name="response is ok" time="0.095" classname="Utilities / Postman Collection / Transform collection from format v2 to v1">
+      <failure type="AssertionFailure">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: b3e4e2e1-3ede-4589-abb1-d4f98ce0d5a9.]]>
+        <![CDATA[Collection name: Postman Echo.]]>
+        <![CDATA[Request name: Utilities / Postman Collection / Transform collection from format v2 to v1.]]>
+        <![CDATA[Test description: response is ok.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 404.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 404
+   at Object.eval sandbox-script.js:1:36).]]>
+      </failure>
+    </testcase>
+    <testcase name="response has almost valid items" time="0.095" classname="Utilities / Postman Collection / Transform collection from format v2 to v1">
+      <failure type="AssertionFailure">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: b3e4e2e1-3ede-4589-abb1-d4f98ce0d5a9.]]>
+        <![CDATA[Collection name: Postman Echo.]]>
+        <![CDATA[Request name: Utilities / Postman Collection / Transform collection from format v2 to v1.]]>
+        <![CDATA[Test description: response has almost valid items.]]>
+        <![CDATA[Error message: expected undefined in response to contain property 'folders'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined in response to contain property 'folders'
+   at Object.eval sandbox-script.js:2:36).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth: Digest / DigestAuth Request" id="a4a014f2-b605-42c9-a7b1-efb801e632d8" tests="2" failures="0" errors="0" time="0.093">
+    <testcase name="response code is 401" time="0.094"/>
+    <testcase name="response has WWW-Authenticate header" time="0.094"/>
+  </testsuite>
+</testsuites>
