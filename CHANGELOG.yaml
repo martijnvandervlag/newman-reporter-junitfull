@@ -7,3 +7,7 @@
   date: 2018-10-25
   improvements:
     - 'JUnit Reporter based on XSD specified by Publish Test Results task for Azure Pipeline | TFS 2018 | TFS 2017 | TFS 2015'
+1.1.1:
+  date: 2018-10-25
+  fixes:
+    - 'Added specification'
