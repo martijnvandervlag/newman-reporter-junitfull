@@ -3,3 +3,7 @@
   date: 2018-10-22
   initial release:
     - 'Initial newman-reporter-junitfull release based on JUnit report in newman'
+1.1.0:
+  date: 2018-10-25
+  improvements:
+    - 'JUnit Reporter based on XSD specified by Publish Test Results task for Azure Pipeline | TFS 2018 | TFS 2017 | TFS 2015'
