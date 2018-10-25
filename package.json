@@ -1,12 +1,13 @@
 {
   "name": "newman-reporter-junitfull",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Newman JUnit Reporter providing full reports (without aggregation of results)",
   "main": "index.js",
   "bundleDependencies": false,
   "dependencies": {
-    "lodash": "4.17.10",
-	"xmlbuilder": "10.0.0"
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "xmlbuilder": "^10.0.0"
   },
   "deprecated": false,
   "homepage": "https://github.com/martijnvandervlag/newman-reporter-junitfull",

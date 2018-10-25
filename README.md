@@ -2,9 +2,10 @@
 JUnit reporter for [Newman](https://github.com/postmanlabs/newman) that provides the information about the collection run in JUnit format.
 This needs to be used in [conjunction with Newman](https://github.com/postmanlabs/newman#external-reporters) so that it can recognize JUnit reporting options.
 
-> Different from [newman-reporter-junit](https://github.com/postmanlabs/newman/blob/develop/lib/reporters/junit/index.js) is not using collection but only executions.
+> JUnit Reporter based on [XSD](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd) specified by [Publish Test Results task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=vsts&tabs=yaml) for Azure Pipeline | TFS 2018 | TFS 2017 | TFS 2015
 
-> Please use [newman-reporter-junit](https://github.com/postmanlabs/newman/blob/develop/lib/reporters/junit/index.js) if you want the original aggregated results.
+> Different from [newman-reporter-junit](https://github.com/postmanlabs/newman/blob/develop/lib/reporters/junit/index.js) is using executions to have full report and no aggregated report.
+Please use [newman-reporter-junit](https://github.com/postmanlabs/newman/blob/develop/lib/reporters/junit/index.js) if you want the original aggregated results.
 
 ## Install
 > The installation should be global if newman is installed globally, local otherwise. (Replace -g from the command below with -S for a local installation)
@@ -71,6 +72,7 @@ newman.run({
 | **newman-reporter-junitfull** | **newman** | **node** |
 |:-----------------------------:|:----------:|:--------:|
 |            v1.0.0             | >= v4.0.0  | >= v6.x  |
+|            v1.1.0             | >= v4.0.0  | >= v6.x  |
 
 ## Troubleshooting
 
